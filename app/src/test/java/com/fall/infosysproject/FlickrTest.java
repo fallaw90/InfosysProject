@@ -10,5 +10,6 @@ public class FlickrTest {
     @Test
     public void test_requestingOject_returnFlickerType(){
         Flickr flickr = Mockito.mock(Flickr.class);
+        Mockito.when(flickr.getDescription()).thenReturn("My description");
     }
 }

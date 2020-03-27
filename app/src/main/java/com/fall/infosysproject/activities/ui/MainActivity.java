@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
     }
 
-    private boolean hasValidationErrors(String searchTerm) {
+    public boolean hasValidationErrors(String searchTerm) {
         if (searchTerm == null || searchTerm.isEmpty()) {
             editTextSearch.setError("Field required!");
             editTextSearch.requestFocus();
